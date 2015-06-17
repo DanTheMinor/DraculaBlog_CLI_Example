@@ -1,0 +1,9 @@
+<ul>
+  {{#each message in model}}
+    {{#link-to 'message' message}}<li>Body: {{message.body}} Name: {{message.name}}</li>{{/link-to}}
+  {{/each}}
+</ul>
+
+{{#link-to 'messages.new'}}New Message{{/link-to}}
+
+{{outlet}}

@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dracula-blog',
     environment: environment,
+    firebase: 'https://luminous-torch-9053.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
