@@ -1,0 +1,16 @@
+{{#if isEditing}}
+  {{partial 'post/edit'}}
+  <button {{action 'save'}}>Done</button>
+{{else}}
+  <button {{action 'edit'}}>Edit</button>
+{{/if}}
+
+<h1>{{title}}</h1>
+
+<h2>by {{author.name}}</h2>
+
+<hr>
+
+<div class="body">
+  {{body}}
+</div>
